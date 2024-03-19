@@ -1,0 +1,193 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+<a [routerLink]="['/singleblog' ,postData.id ]" class="flex max-w-xl flex-col items-start justify-between">
+    <div class="flex items-center gap-x-4 text-xs">
+        <time datetime="2020-03-16" class="text-gray-500">{{ postData.createdAt | date }}</time>
+        <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ postData.categoryName }}</a>
+    </div>
+    <div class="group relative">
+        <img class="w-full mt-2 h-60 object-cover rounded-xl oject-center" [src]="postData.imgPath" alt="">
+        <h2 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+            <a href="#">
+                <span class="absolute inset-0"></span>
+                {{ postData.title }}
+            </a>
+        </h2>
+        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{{ postData.subtitle}}</p>
+    </div>
+    <div class="relative mt-8 flex items-center gap-x-4">
+        <img [src]="postData.imgPath" alt="" class="h-10 w-10  rounded-full bg-gray-50">
+        <div class="text-sm leading-6">
+            <p class="font-semibold text-gray-900">
+                <a href="#">
+                    <span class="absolute inset-0"></span>
+                    {{postData.authorName}}
+                </a>
+            </p>
+            <p class="text-gray-600">{{postData.authorRole}}</p>
+        </div>
+    </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Feb 21, 2024</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Tech News</a>
+                </div>
+                <div class="group relative">
+                    <img class="w-full mt-2 h-50 object-cover object-center" src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                alt="">
+                    <h2 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                            <span class="absolute inset-0"></span>
+                            The Rise of Quantum Computing: A Glimpse into the Future
+                        </a>
+                    </h2>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Quantum computing is poised to revolutionize industries from finance to healthcare. Learn about the latest advancements and how they'll shape the future.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1573495616590-32e6ffdfaad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Sophia Carter
+                            </a>
+                        </p>
+                        <p class="text-gray-600">Senior Tech Analyst</p>
+                    </div>
+                </div>
+            </article> -->
+            <!-- <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Feb 22, 2024</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Artificial Intelligence</a>
+                </div>
+                <div class="group relative">
+                    <img class="w-full mt-2 h-50 object-cover object-center" src="https://images.pexels.com/photos/5935792/pexels-photo-5935792.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="">
+                    <h2 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                            <span class="absolute inset-0"></span>
+                            The Ethics of AI: Balancing Innovation with Responsibility
+                        </a>
+                    </h2>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">As AI technology advances, so too do ethical concerns. Explore the ethical implications of AI development and how society can ensure responsible innovation.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Benjamin Patel
+                            </a>
+                        </p>
+                        <p class="text-gray-600">AI Ethics Researcher</p>
+                    </div>
+                </div>
+            </article>
+            <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Feb 23, 2024</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Cybersecurity</a>
+                </div>
+                <div class="group relative">
+                    <img class="w-full mt-2 h-50 object-cover object-center" src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="">
+                    <h2 class="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                            <span class="absolute inset-0"></span>
+                            Securing the Digital Frontier: Trends in Cybersecurity for 2024
+                        </a>
+                    </h2>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">With cyber threats evolving rapidly, staying ahead of security risks is crucial. Discover the latest cybersecurity trends and strategies to protect your digital assets.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Emily Hughes
+                            </a>
+                        </p>
+                        <p class="text-gray-600">Cybersecurity Analyst</p>
+                    </div>
+                </div>
+            </article> -->
+        <!-- </div>
+    </div>
+</div> -->
+
+
+
+
+
+<!-- <div class="container mb-5 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="max-w-xs mx-auto bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden">
+        <a href="#">
+            <img class="w-full h-50 object-cover object-center" src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                alt="">
+        </a>
+        <div class="p-4">
+            <a href="#">
+                <h5 class="text-gray-900 font-bold text-xl mb-2">Noteworthy technology acquisitions 2021</h5>
+            </a>
+            <p class="text-gray-700 text-sm mb-3">Here are the biggest enterprise technology acquisitions of 2021 so
+                far, in reverse chronological order.</p>
+            <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 inline-block"
+                href="#">
+                Read more
+            </a>
+        </div>
+    </div>
+    <div class="max-w-xs mx-auto bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden">
+        <a href="#">
+            <img class="w-full h-50 object-cover object-center" src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                alt="">
+        </a>
+        <div class="p-4">
+            <a href="#">
+                <h5 class="text-gray-900 font-bold text-xl mb-2">Noteworthy technology acquisitions 2021</h5>
+            </a>
+            <p class="text-gray-700 text-sm mb-3">Here are the biggest enterprise technology acquisitions of 2021 so
+                far, in reverse chronological order.</p>
+            <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 inline-block"
+                href="#">
+                Read more
+            </a>
+        </div>
+    </div>
+    <div class="max-w-xs mx-auto bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden">
+        <a href="#">
+            <img class="w-full h-50 object-cover object-center" src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                alt="">
+        </a>
+        <div class="p-4">
+            <a href="#">
+                <h5 class="text-gray-900 font-bold text-xl mb-2">Noteworthy technology acquisitions 2021</h5>
+            </a>
+            <p class="text-gray-700 text-sm mb-3">Here are the biggest enterprise technology acquisitions of 2021 so
+                far, in reverse chronological order.</p>
+            <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 inline-block"
+                href="#">
+                Read more
+            </a>
+        </div>
+    </div>
+
+</div> -->

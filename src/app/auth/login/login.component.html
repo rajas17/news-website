@@ -1,0 +1,76 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+<div class="max-h-auto bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <div class="relative bg-white shadow-lg sm:rounded-3xl sm:p-8">
+
+            <div class="p-4">
+                <h1 class="text-center text-2xl font-semibold mb-3">Login</h1>
+                <form [formGroup]="rxform" class="space-y-4" (ngSubmit)="onSubmit1(rxform)">
+                    <div class="form-group">
+                        <label for="name" class="block mb-1">Name</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input formControlName="name" type="text"
+                                class="form-input w-full pl-12 h-12 rounded-lg border border-gray-100"
+                                placeholder="Enter your name" (blur)="markAsTouched('name')">
+                        </div>
+                        <div *ngIf="rxform.get('name')?.invalid && rxform.get('name')?.touched" class="text-red-500">
+                            Enter a valid name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="block mb-1">Email</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <input formControlName="email" type="email"
+                                class="form-input w-full pl-12 h-12 border border-gray-100 rounded-lg"
+                                placeholder="Enter email" (blur)="markAsTouched('email')"
+                                [ngClass]="{'border-red-500': rxform.get('email')?.invalid && rxform.get('email')?.touched}">
+                        </div>
+                        <div *ngIf="rxform.get('email')?.invalid && rxform.get('email')?.touched" class="text-red-500">
+                            Enter a valid email</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="block mb-1">Password</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                            <input formControlName="password" type="{{ showPassword ? 'text' : 'password' }}"
+                                class="form-input w-full pl-12 h-12 border border-gray-100 focus:border-gray-100 rounded-lg"
+                                placeholder="Enter password" (blur)="markAsTouched('password')"
+                                [ngClass]="{'border-red-500': rxform.get('password')?.invalid && rxform.get('password')?.touched}">
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                                <button type="button" (click)="togglePassword('password')"
+                                    class="text-gray-500 focus:outline-none">
+                                    <i class="fa" [ngClass]="showPassword ? 'fa-eye' : 'fa-eye-slash'"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div *ngIf="rxform.get('password')?.invalid && rxform.get('password')?.touched"
+                            class="text-red-500">Enter valid password</div>
+                    </div>
+                    
+                    <a routerLink="/home" class="text-blue-500 text-md cursor-pointer ">Back to Home?</a>
+                    <div class="flex flex-col justify-center">
+                        <button style="margin-top: 10px; " type="submit"
+                            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,712 @@
+{
+  "categories": [
+    {
+      "id": "4aaf",
+      "category": "sports",
+      "status": "live"
+    },
+    {
+      "category": "technology",
+      "status": "live",
+      "id": "bdeb"
+    },
+    {
+      "id": "9b68",
+      "category": "entertainment",
+      "status": "live"
+    },
+    {
+      "id": "5606",
+      "category": "news",
+      "status": "live"
+    },
+    {
+      "id": "21f0",
+      "category": "movies",
+      "status": "live"
+    },
+    {
+      "id": "1cbc",
+      "category": "fashion",
+      "status": "live"
+    },
+    {
+      "id": "2245",
+      "category": "health",
+      "status": "live"
+    }
+  ],
+  "admin": [
+    {
+      "name": "Rajas Kondhare",
+      "email": "rajas@gmail.com",
+      "password": "Rajas@17",
+      "id": "f99d",
+      "isMaster": true
+    },
+    {
+      "id": "239d",
+      "name": "awawd",
+      "email": "sdfs@34",
+      "password": "sdf#3234dD",
+      "cpassword": "sdf#3234dD"
+    },
+    {
+      "id": "8245",
+      "name": "test123",
+      "email": "test@test.com",
+      "password": "Test@123",
+      "cpassword": "Test@123"
+    }
+  ],
+  "posts": [
+    {
+      "id": "d3e8",
+      "title": "New Study Reveals Surprising Benefits of Meditation for Mental Health",
+      "permalink": "benefits-of-meditation-for-mental-health",
+      "category": {
+        "categoryId": "2245",
+        "category": "health"
+      },
+      "authorName": "Emily Rodriguez",
+      "authorRole": "Health Editor",
+      "subtitle": "Discover how incorporating meditation into your daily routine can positively impact your mental well-being.",
+      "content": "In a groundbreaking study published today in the Journal of Psychiatry and Neuroscience, researchers found compelling evidence suggesting that regular meditation practice can lead to significant improvements in mental health. The study, conducted over a period of two years with over 1,000 participants, revealed that individuals who meditated for at least 20 minutes each day experienced reduced symptoms of anxiety, depression, and stress. Moreover, MRI scans showed measurable changes in brain activity associated with enhanced emotional regulation and resilience. These findings underscore the transformative potential of meditation as a holistic approach to mental wellness.",
+      "imgPath": "https://images.pexels.com/photos/3873209/pexels-photo-3873209.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T08:45:00.000Z"
+    },
+    {
+      "id": "b91f",
+      "title": "New Research Shows Link Between Mediterranean Diet and Longevity",
+      "permalink": "link-between-mediterranean-diet-and-longevity",
+      "category": {
+        "categoryId": "2245",
+        "category": "health"
+      },
+      "authorName": "David Smith",
+      "authorRole": "Health Correspondent",
+      "subtitle": "Explore the latest study suggesting that adherence to the Mediterranean diet may contribute to a longer and healthier life.",
+      "content": "A recent study published in the Journal of the American Medical Association (JAMA) has shed light on the potential benefits of the Mediterranean diet for promoting longevity and overall health. Researchers followed a large cohort of participants over a span of 20 years and found that those who closely adhered to the Mediterranean diet had a significantly lower risk of mortality from various causes, including heart disease, cancer, and neurodegenerative disorders. The diet, characterized by an emphasis on fruits, vegetables, whole grains, olive oil, and lean proteins, has long been associated with numerous health benefits, but this study provides further evidence of its role in supporting longevity and well-being. Experts urge individuals to consider adopting dietary patterns like the Mediterranean diet as part of a holistic approach to health and longevity.",
+      "imgPath": "https://media.cnn.com/api/v1/images/stellar/prod/170717104105-mediterranean-diet-stock.jpg?q=w_3000,h_1949,x_0,y_0,c_fill",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-12T09:15:00.000Z"
+    },
+    {
+      "id": "e9d2",
+      "title": "New Study Shows Link Between Sleep Quality and Heart Health",
+      "permalink": "link-between-sleep-quality-and-heart-health",
+      "category": {
+        "categoryId": "2245",
+        "category": "health"
+      },
+      "authorName": "David Thompson",
+      "authorRole": "Health Correspondent",
+      "subtitle": "Discover the latest findings on how getting adequate sleep can benefit your heart health.",
+      "content": "A recent study published in the American Journal of Cardiology has revealed a significant association between sleep quality and heart health. Researchers conducted a comprehensive analysis of sleep patterns and cardiovascular outcomes among over 10,000 participants and found that individuals who reported better sleep quality had a lower risk of developing heart disease and experiencing adverse cardiac events. Furthermore, the study identified specific sleep-related factors, such as sleep duration and sleep disturbances, that were independently linked to cardiovascular health. These findings underscore the importance of prioritizing good sleep habits as part of a heart-healthy lifestyle.",
+      "imgPath": "https://sugunahospital.com/wp-content/uploads/2023/12/Impact-of-Sleep-on-your-Heart-Health.jpg",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-13T10:15:00.000Z"
+    },
+    {
+      "id": "e92a",
+      "title": "The Next Blockbuster: Anticipated Releases of the Summer",
+      "permalink": "anticipated-releases-of-the-summer",
+      "category": {
+        "categoryId": "21f0",
+        "category": "movies"
+      },
+      "authorName": "Christopher Reynolds",
+      "authorRole": "Film Enthusiast",
+      "subtitle": "Get ready for an epic summer at the movies with these highly anticipated releases.",
+      "content": "As the summer approaches, cinephiles are eagerly awaiting the arrival of several blockbuster films set to hit theaters. From action-packed thrillers to heartwarming comedies, this season promises an exciting lineup of cinematic adventures. Stay tuned as we highlight the most anticipated releases that are sure to make waves at the box office.",
+      "imgPath": "https://helios-i.mashable.com/imagery/articles/0729r4FnLGebxBphBiST2do/hero-image.fill.size_1248x702.v1682544426.jpg",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T10:30:00.000Z"
+    },
+    {
+      "id": "b12c",
+      "title": "Behind the Scenes: Making of a Hollywood Blockbuster",
+      "permalink": "making-of-a-hollywood-blockbuster",
+      "category": {
+        "categoryId": "21f0",
+        "category": "movies"
+      },
+      "authorName": "Jessica Thompson",
+      "authorRole": "Film Journalist",
+      "subtitle": "Go behind the curtain and discover the magic behind the creation of a Hollywood blockbuster.",
+      "content": "Ever wondered what goes into the making of a Hollywood blockbuster? Join us on an exclusive journey behind the scenes as we explore the intricate process of filmmaking. From scriptwriting and casting to special effects and post-production, get an insider's look at the meticulous craftsmanship that brings cinematic masterpieces to life.",
+      "imgPath": "https://www.hollywoodreporter.com/wp-content/uploads/2024/01/GF-11507_MSG-Melinda-Sue-Gordon-Universal-Pictures-Splash-2024.jpg?w=2000&h=1126&crop=1",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T12:45:00.000Z"
+    },
+    {
+      "id": "82ca",
+      "title": "Top 10 Sporting Moments of the Year",
+      "permalink": "top-10-sporting-moments-of-the-year",
+      "category": {
+        "categoryId": "4aaf",
+        "category": "sports"
+      },
+      "authorName": "Rajas Kondhare",
+      "authorRole": "Blog Writer",
+      "subtitle": "Relive the excitement with the most unforgettable sporting moments from the past year.",
+      "content": "From jaw-dropping goals to nail-biting finishes, the world of sports never fails to amaze us. In this article, we take a look back at the top 10 sporting moments that captivated fans around the globe.",
+      "imgPath": "https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-06T08:15:00.000Z"
+    },
+    {
+      "id": "9d28",
+      "title": "The Future of AI in Healthcare",
+      "permalink": "future-of-ai-in-healthcare",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Sophia Chen",
+      "authorRole": "Health Tech Analyst",
+      "subtitle": "Explore how artificial intelligence is transforming the healthcare industry and shaping the future of medicine.",
+      "content": "AI-driven technologies are revolutionizing healthcare by enhancing diagnosis, treatment, and patient care. Discover the latest innovations and their potential impact on the healthcare landscape.",
+      "imgPath": "https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-07T10:45:00.000Z"
+    },
+    {
+      "id": "f59a",
+      "title": "Exclusive Interview with Hollywood Star",
+      "permalink": "exclusive-interview-with-hollywood-star",
+      "category": {
+        "categoryId": "9b68",
+        "category": "entertainment"
+      },
+      "authorName": "Emily Davis",
+      "authorRole": "Entertainment Correspondent",
+      "subtitle": "Get an insider's perspective as we sit down with a prominent Hollywood actor to discuss their latest projects and career highlights.",
+      "content": "In this exclusive interview, we delve into the world of entertainment with one of Hollywood's biggest stars. Gain insights into their creative process, upcoming projects, and the evolving landscape of the film industry.",
+      "imgPath": "https://images.pexels.com/photos/2695679/pexels-photo-2695679.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-08T14:20:00.000Z"
+    },
+    {
+      "id": "7bc9",
+      "title": "Breaking News: Major Discovery in Space Exploration",
+      "permalink": "major-discovery-in-space-exploration",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "authorName": "Michael Johnson",
+      "authorRole": "Space Correspondent",
+      "subtitle": "Stay updated with the latest developments as scientists uncover groundbreaking discoveries in the realm of space exploration.",
+      "content": "Exciting news has emerged from the world of space exploration, as researchers make a significant breakthrough that could reshape our understanding of the universe. Learn more about this monumental discovery and its implications.",
+      "imgPath": "https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-09T09:30:00.000Z"
+    },
+    {
+      "id": "d584",
+      "title": "Must-Watch Movies of the Year",
+      "permalink": "must-watch-movies-of-the-year",
+      "category": {
+        "categoryId": "21f0",
+        "category": "movies"
+      },
+      "authorName": "Alexandra Lee",
+      "authorRole": "Film Critic",
+      "subtitle": "Discover the cinematic gems that stole the spotlight and captured hearts this year.",
+      "content": "From gripping dramas to blockbuster hits, this list features the must-watch movies that left a lasting impression on audiences worldwide. Don't miss out on these unforgettable cinematic experiences.",
+      "imgPath": "https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-10T12:00:00.000Z"
+    },
+    {
+      "id": "a342",
+      "title": "The Rise of Sustainable Technology",
+      "permalink": "rise-of-sustainable-technology",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "authorName": "David Brown",
+      "authorRole": "Environmental Scientist",
+      "subtitle": "Explore how advancements in technology are driving sustainability efforts and reshaping industries for a greener future.",
+      "content": "As the world grapples with environmental challenges, innovative technologies are emerging to promote sustainability across various sectors. Learn about the latest trends and initiatives that are paving the way for a more eco-friendly world.",
+      "imgPath": "https://images.pexels.com/photos/17485678/pexels-photo-17485678/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-depicts-how-ai-could-be-used-in-the-field-of-sustainability-from-biodiversity-to-climate-it-was-created-by-nidia-dias.png?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-11T15:45:00.000Z"
+    },
+    {
+      "id": "b1dc",
+      "title": "The Psychology Behind Sports Performance",
+      "permalink": "psychology-behind-sports-performance",
+      "category": {
+        "categoryId": "4aaf",
+        "category": "sports"
+      },
+      "authorName": "Ethan Taylor",
+      "authorRole": "Sports Psychologist",
+      "subtitle": "Gain insight into the mental aspects of athletic performance and strategies for optimizing sports psychology.",
+      "content": "Success in sports often relies on more than just physical prowess—it also involves mental fortitude and psychological resilience. Explore the psychological factors that influence athletic performance and discover techniques for achieving peak mental state.",
+      "imgPath": "https://images.pexels.com/photos/34514/spot-runs-start-la.jpg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-12T11:20:00.000Z"
+    },
+    {
+      "id": "8e9f",
+      "title": "Advancements in Virtual Reality Gaming",
+      "permalink": "advancements-in-virtual-reality-gaming",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Nathan Reynolds",
+      "authorRole": "VR Gaming Enthusiast",
+      "subtitle": "Explore the latest developments in virtual reality technology and how they are reshaping the gaming industry.",
+      "content": "Virtual reality gaming has come a long way in recent years, offering immersive experiences that blur the lines between reality and the digital world. Dive into the cutting-edge advancements that are taking VR gaming to new heights.",
+      "imgPath": "https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-13T09:55:00.000Z"
+    },
+    {
+      "id": "6f14",
+      "title": "Behind the Scenes: Making of a Blockbuster",
+      "permalink": "making-of-a-blockbuster",
+      "category": {
+        "categoryId": "9b68",
+        "category": "entertainment"
+      },
+      "authorName": "Olivia Parker",
+      "authorRole": "Film Production Insider",
+      "subtitle": "Take a sneak peek into the creative process behind the making of a Hollywood blockbuster.",
+      "content": "From scriptwriting to post-production, creating a blockbuster film is a collaborative effort that involves countless hours of hard work and dedication. Join us as we uncover the behind-the-scenes magic that brings these cinematic masterpieces to life.",
+      "imgPath": "https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-14T14:30:00.000Z"
+    },
+    {
+      "id": "04a3",
+      "title": "Innovations in Renewable Energy",
+      "permalink": "innovations-in-renewable-energy",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "authorName": "Isabella Nguyen",
+      "authorRole": "Renewable Energy Specialist",
+      "subtitle": "Discover the latest breakthroughs in renewable energy technologies and their potential to revolutionize the way we power the world.",
+      "content": "With growing concerns about climate change, renewable energy sources have become increasingly important in the quest for a sustainable future. Explore the cutting-edge innovations that are driving the renewable energy revolution forward.",
+      "imgPath": "https://images.pexels.com/photos/1292464/pexels-photo-1292464.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-15T10:10:00.000Z"
+    },
+    {
+      "id": "f7a2",
+      "title": "Eco-Friendly Fashion: Sustainable Trends for a Greener Wardrobe",
+      "permalink": "eco-friendly-fashion-sustainable-trends",
+      "category": {
+        "categoryId": "1cbc",
+        "category": "fashion"
+      },
+      "authorName": "Sophia Lee",
+      "authorRole": "Fashion Editor",
+      "subtitle": "Explore the latest eco-conscious fashion trends that prioritize sustainability without sacrificing style.",
+      "content": "With growing awareness of environmental issues, eco-friendly fashion has become increasingly popular among consumers seeking sustainable alternatives. From recycled materials to ethically sourced fabrics, designers are innovating to reduce the industry's ecological footprint. In this article, we delve into the top sustainable fashion trends shaping the future of style. Expect to see a rise in upcycled garments, biodegradable textiles, and cruelty-free accessories. Embracing eco-conscious fashion not only benefits the planet but also allows individuals to express their values through clothing choices. Join the movement towards a greener wardrobe!",
+      "imgPath": "https://images.pexels.com/photos/5710151/pexels-photo-5710151.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T09:15:00.000Z"
+    },
+    {
+      "id": "f4b1",
+      "title": "Gender-Neutral Fashion: Breaking Barriers and Challenging Norms",
+      "permalink": "gender-neutral-fashion-breaking-barriers-challenging-norms",
+      "category": {
+        "categoryId": "1cbc",
+        "category": "fashion"
+      },
+      "authorName": "Taylor Lee",
+      "authorRole": "Fashion Activist and Gender Equality Advocate",
+      "subtitle": "Embrace inclusivity and diversity with gender-neutral clothing that defies stereotypes.",
+      "content": "In a world that's increasingly embracing diversity, fashion is following suit with a rise in gender-neutral clothing options. From fluid silhouettes to minimalist designs, gender-neutral fashion challenges traditional norms and celebrates individuality. In this blog post, we explore the growing trend of gender-neutral fashion, highlighting brands that prioritize inclusivity and empower individuals to express themselves authentically. Join the movement towards a more inclusive fashion industry and discover the freedom of dressing without boundaries.",
+      "imgPath": "https://miro.medium.com/v2/resize:fit:1400/1*GPx3JQ5xlDJkQAUOYOSxiA.jpeg",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T12:45:00.000Z"
+    },
+    {
+      "id": "e2b8",
+      "title": "Highlights from the 96th Academy Awards: Memorable Moments and Winners",
+      "permalink": "highlights-from-the-96th-academy-awards-memorable-moments-and-winners",
+      "category": {
+        "categoryId": "9b68",
+        "category": "entertainment"
+      },
+      "authorName": "Nathan Thompson",
+      "authorRole": "Entertainment Correspondent",
+      "subtitle": "Recap the most memorable moments and celebrate the winners from this year's Oscars ceremony.",
+      "content": "The 96th Academy Awards dazzled audiences with a star-studded ceremony celebrating the best in film. From emotional acceptance speeches to surprise wins, the night was filled with unforgettable moments. Highlights included historic victories, heartfelt tributes, and standout performances. 'CODA' made history as the first film featuring a predominantly deaf cast to win Best Picture, while Jessica Chastain and Will Smith took home top acting honors. With memorable musical performances and touching tributes to industry legends, the Oscars once again proved to be a must-watch event for film enthusiasts worldwide.",
+      "imgPath": "https://i.abcnewsfe.com/a/f9948dd4-e3be-44bf-90da-28bac3250e2a/oscars-51-gty-gmh-024310_1710122846622_hpMain_16x9.jpg?w=992",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-04-11T17:45:00.000Z"
+    },
+    {
+      "id": "a7d2",
+      "title": "Critics Rave About New Sci-Fi Thriller 'Inception X': A Mind-Bending Masterpiece",
+      "permalink": "critics-rave-about-new-sci-fi-thriller-inception-x-a-mind-bending-masterpiece",
+      "category": {
+        "categoryId": "9b68",
+        "category": "entertainment"
+      },
+      "authorName": "Sophia Evans",
+      "authorRole": "Film Critic",
+      "subtitle": "Discover why critics and audiences alike are praising 'Inception X' as a groundbreaking addition to the sci-fi genre.",
+      "content": "'Inception X' has taken the cinematic world by storm, captivating audiences with its mesmerizing visuals and thought-provoking narrative. Directed by visionary filmmaker Ava Rodriguez, the film pushes the boundaries of imagination, exploring the depths of the human mind in a thrilling and immersive journey. Critics have hailed it as a modern masterpiece, praising its innovative storytelling and stunning visual effects. With standout performances from the ensemble cast and a gripping storyline that keeps viewers on the edge of their seats, 'Inception X' is a must-see for sci-fi enthusiasts and film lovers alike.",
+      "imgPath": "https://bloody-disgusting.com/wp-content/uploads/2022/02/British-Sc-Fi-Thriller-8216Deus8217-Sells-to-Darkland-Distribution-EXCLUSIVE.jpeg",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T18:30:00.000Z"
+    },
+    {
+      "id": "b2f6",
+      "title": "Rising Star Wins Prestigious Acting Award",
+      "permalink": "rising-star-wins-prestigious-acting-award",
+      "category": {
+        "categoryId": "9b68",
+        "category": "entertainment"
+      },
+      "authorName": "Gabriel Martinez",
+      "authorRole": "Entertainment Journalist",
+      "subtitle": "Celebrating the remarkable achievements of a talented newcomer in the world of entertainment.",
+      "content": "In a night filled with glitz and glamour, the entertainment industry witnessed the ascent of a rising star as they clinched a prestigious acting award. With a captivating performance that mesmerized audiences and critics alike, this talented newcomer has quickly made a name for themselves on the silver screen. From captivating portrayals to nuanced characterizations, their dedication to the craft of acting has earned them well-deserved recognition. Join us in applauding this rising star's remarkable achievement and anticipating the bright future that lies ahead.",
+      "imgPath": "https://www.hindustantimes.com/ht-img/img/2024/01/08/550x309/Golden_Globe_Awards_Live_1704689251289_1704689251489.JPG",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T14:30:00.000Z"
+    },
+    {
+      "id": "d9c2",
+      "title": "Virtual Fashion Shows: The Future of Runway Presentations",
+      "permalink": "virtual-fashion-shows-future-runway-presentations",
+      "category": {
+        "categoryId": "1cbc",
+        "category": "fashion"
+      },
+      "authorName": "Sophia Chen",
+      "authorRole": "Fashion Technology Innovator and Event Organizer",
+      "subtitle": "Experience the excitement of fashion from the comfort of your own home with virtual runway shows.",
+      "content": "In the age of digital innovation, fashion shows are no longer confined to physical venues. Virtual fashion shows are revolutionizing the way we experience runway presentations, offering audiences a front-row seat to the latest collections from anywhere in the world. In this blog post, we explore the rise of virtual fashion shows and their impact on the industry. From immersive 3D environments to interactive experiences, discover how technology is shaping the future of fashion events and redefining the concept of the runway.",
+      "imgPath": "https://media.licdn.com/dms/image/D4D12AQEzuQ69lB047A/article-cover_image-shrink_720_1280/0/1684153429971?e=2147483647&v=beta&t=UV3I_WRKL0TMxPRTlIFs9FGR0gPDyVVh4NVd4mPyrhA",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T13:00:00.000Z"
+    },
+    {
+      "id": "e9b4",
+      "title": "Tech-Infused Fashion: Blending Style with Innovation",
+      "permalink": "tech-infused-fashion-blending-style-innovation",
+      "category": {
+        "categoryId": "1cbc",
+        "category": "fashion"
+      },
+      "authorName": "Alexandra Smith",
+      "authorRole": "Fashion and Technology Writer",
+      "subtitle": "Discover the intersection of fashion and technology, where innovative designs meet cutting-edge advancements.",
+      "content": "In today's digital age, technology is revolutionizing every aspect of our lives, including fashion. From smart fabrics to wearable tech, the integration of technology into fashion has led to the creation of garments that are not only stylish but also functional. In this article, we explore the latest trends in tech-infused fashion, from interactive clothing that responds to the wearer's movements to accessories equipped with smart features like GPS tracking and biometric sensors. As fashion designers embrace the possibilities of technology, consumers can expect to see a new era of innovation in the way we dress. Stay ahead of the curve and embrace the future of fashion with these cutting-edge designs.",
+      "imgPath": "https://media.licdn.com/dms/image/D5612AQEhRNIuXASWlA/article-cover_image-shrink_720_1280/0/1698431345688?e=2147483647&v=beta&t=WAu4RiaQCwR5l2mLN6j6hMyI_O9eWSr9uNn6XK__Bmo",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-11T10:30:00.000Z"
+    },
+    {
+      "id": "92f6",
+      "title": "Exploring the Wonders of Underwater Archaeology",
+      "permalink": "exploring-the-wonders-of-underwater-archaeology",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "authorName": "Lucas Thompson",
+      "authorRole": "Marine Archaeologist",
+      "subtitle": "Dive deep into the fascinating world of underwater archaeology and uncover lost civilizations beneath the waves.",
+      "content": "Underwater archaeology offers a unique glimpse into the past, allowing us to explore sunken cities, ancient shipwrecks, and submerged ruins. Join us as we venture beneath the waves to discover the wonders of this captivating field.",
+      "imgPath": "https://images.pexels.com/photos/920163/pexels-photo-920163.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-16T11:45:00.000Z"
+    },
+    {
+      "id": "b0a2",
+      "title": "The Art of Culinary Innovation",
+      "permalink": "art-of-culinary-innovation",
+      "category": {
+        "categoryId": "2245",
+        "category": "health"
+      },
+      "authorName": "Gabriella Russo",
+      "authorRole": "Food Critic",
+      "subtitle": "Explore the creative world of culinary innovation and the chefs pushing the boundaries of gastronomy.",
+      "content": "In the realm of food, innovation knows no bounds. From molecular gastronomy to fusion cuisine, chefs around the world are constantly experimenting with new flavors, techniques, and presentations. Join us on a culinary journey to discover the art of innovation in the kitchen.",
+      "imgPath": "https://images.pexels.com/photos/6210916/pexels-photo-6210916.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-17T09:20:00.000Z"
+    },
+    {
+      "id": "f3b2",
+      "title": "Exploring the World of Quantum Computing",
+      "permalink": "exploring-the-world-of-quantum-computing",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Daniel Evans",
+      "authorRole": "Quantum Computing Researcher",
+      "subtitle": "Delve into the complex realm of quantum computing and its potential to revolutionize the field of information technology.",
+      "content": "Quantum computing represents a paradigm shift in computing technology, offering unparalleled processing power and the ability to solve complex problems that are beyond the capabilities of classical computers. Join us as we explore the fascinating world of quantum computing and its implications for the future.",
+      "imgPath": "https://images.pexels.com/photos/8721342/pexels-photo-8721342.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-18T12:55:00.000Z"
+    },
+    {
+      "id": "e5d6",
+      "title": "Rediscovering Ancient Civilizations",
+      "permalink": "rediscovering-ancient-civilizations",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "authorName": "Sophie Martinez",
+      "authorRole": "Archaeologist",
+      "subtitle": "Join us on a journey through time as we uncover the mysteries of ancient civilizations and their enduring legacies.",
+      "content": "The study of ancient civilizations offers a window into the past, revealing the rich tapestry of human history and the achievements of our ancestors. From the pyramids of Egypt to the temples of Angkor Wat, join us as we rediscover the wonders of ancient civilizations.",
+      "imgPath": "https://images.pexels.com/photos/159862/art-school-of-athens-raphael-italian-painter-fresco-159862.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-19T09:40:00.000Z"
+    },
+    {
+      "title": "The Power of Mindfulness in Everyday Life",
+      "permalink": "power-of-mindfulness-in-everyday-life",
+      "category": {
+        "categoryId": "4aaf",
+        "category": "sports"
+      },
+      "subtitle": "Discover the transformative effects of mindfulness practices and how they can enhance well-being in your daily life.",
+      "content": "In a fast-paced world filled with distractions, mindfulness offers a pathway to inner peace and greater presence in each moment. Explore the power of mindfulness through meditation, breathing exercises, and simple techniques that can be integrated into your everyday life.",
+      "imgPath": "https://images.pexels.com/photos/289586/pexels-photo-289586.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "authorName": "Aiden Campbell",
+      "authorRole": "Mindfulness Coach",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-07T06:44:09.309Z",
+      "id": "c8a1"
+    },
+    {
+      "id": "73b8",
+      "title": "The Future of Urban Mobility",
+      "permalink": "future-of-urban-mobility",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Liam Wilson",
+      "authorRole": "Urban Mobility Analyst",
+      "subtitle": "Explore innovative solutions and emerging technologies that are shaping the future of transportation in cities worldwide.",
+      "content": "As urban populations continue to grow, the need for sustainable and efficient transportation solutions becomes increasingly urgent. Join us as we examine the future of urban mobility, from electric vehicles and autonomous drones to hyperloop systems and beyond.",
+      "imgPath": "https://images.pexels.com/photos/3671142/pexels-photo-3671142.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-21T09:25:00.000Z"
+    },
+    {
+      "id": "95c2",
+      "title": "The Art of Astrophotography",
+      "permalink": "art-of-astrophotography",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "authorName": "Emma Wright",
+      "authorRole": "Astrophotographer",
+      "subtitle": "Journey to the stars through the lens of astrophotography and discover the beauty of the cosmos.",
+      "content": "Astrophotography combines art and science to capture stunning images of celestial objects, from distant galaxies to shimmering nebulae. Join us as we explore the techniques and equipment used to photograph the wonders of the universe.",
+      "imgPath": "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-22T13:50:00.000Z"
+    },
+    {
+      "id": "81d4",
+      "title": "Revolutionizing Financial Technology",
+      "permalink": "revolutionizing-financial-technology",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Matthew Roberts",
+      "authorRole": "Fintech Innovator",
+      "subtitle": "Explore the latest trends and innovations in financial technology and their impact on the global economy.",
+      "content": "From blockchain and digital currencies to robo-advisors and mobile payments, fintech is reshaping the way we think about money and finance. Join us as we delve into the world of financial technology and its transformative potential.",
+      "imgPath": "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-23T11:15:00.000Z"
+    },
+    {
+      "id": "f4e7",
+      "title": "Exploring the Mysteries of Deep Space",
+      "permalink": "exploring-the-mysteries-of-deep-space",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "authorName": "Jack Thompson",
+      "authorRole": "Astrophysicist",
+      "subtitle": "Embark on a journey through the cosmos and unravel the mysteries of deep space.",
+      "content": "Deep space holds countless wonders waiting to be discovered, from black holes and supernovae to distant exoplanets and cosmic phenomena. Join us as we peer into the depths of the universe and explore the frontiers of human knowledge.",
+      "imgPath": "https://images.pexels.com/photos/261325/pexels-photo-261325.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-24T10:30:00.000Z"
+    },
+    {
+      "id": "d9a1",
+      "title": "The Evolution of Artificial Intelligence",
+      "permalink": "evolution-of-artificial-intelligence",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Sophie Johnson",
+      "authorRole": "AI Researcher",
+      "subtitle": "Trace the history and development of artificial intelligence from its origins to the present day.",
+      "content": "Artificial intelligence has undergone rapid evolution in recent decades, leading to advancements in machine learning, natural language processing, and computer vision. Join us as we explore the milestones and breakthroughs that have shaped the field of AI.",
+      "imgPath": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-20T09:40:00.000Z"
+    },
+    {
+      "title": "The Beauty of Wildlife Photography",
+      "permalink": "beauty-of-wildlife-photography",
+      "category": {
+        "categoryId": "5606",
+        "category": "news"
+      },
+      "subtitle": "Immerse yourself in the natural world through the lens of wildlife photography and experience the beauty of Earth's creatures.",
+      "content": "Wildlife photography allows us to connect with nature in a profound way, capturing the grace, power, and majesty of animals in their natural habitats. Join us as we celebrate the diversity of life on Earth through stunning photographs of wildlife from around the globe.",
+      "imgPath": "https://images.pexels.com/photos/209096/pexels-photo-209096.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "authorName": "Elijah Carter",
+      "authorRole": "Wildlife Photographer",
+      "views": 0,
+      "status": "new",
+      "isFeatured": false,
+      "createdAt": "2024-03-11T04:15:29.818Z",
+      "id": "a8c5"
+    },
+    {
+      "id": "b00a",
+      "title": "The Future of Space Tourism",
+      "permalink": "future-of-space-tourism",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Dr. Alexander Grant",
+      "authorRole": "Astrophysicist",
+      "subtitle": "Exploring the possibilities of commercial space travel and its impact on society.",
+      "content": "Space tourism is no longer a distant dream but a rapidly approaching reality, with companies like SpaceX, Blue Origin, and Virgin Galactic leading the way in making space travel accessible to the public. Join us as we discuss the latest developments in space tourism, from suborbital joyrides to lunar excursions, and explore the potential societal, economic, and environmental implications of this new era of exploration.",
+      "imgPath": "https://images.unsplash.com/photo-1457364887197-9150188c107b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnV0dXJlJTIwb2YlMjBzcGFjZSUyMHRvdXJpc218ZW58MHwwfDB8fHww",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-25T09:40:00.000Z"
+    },
+    {
+      "id": "d8b2",
+      "title": "Revolutionizing Urban Mobility with Micromobility Solutions",
+      "permalink": "micromobility-solutions-urban-mobility",
+      "category": {
+        "categoryId": "bdeb",
+        "category": "technology"
+      },
+      "authorName": "Emma Thompson",
+      "authorRole": "Urban Planner",
+      "subtitle": "Examining the role of electric scooters, bicycles, and other micromobility options in creating sustainable urban environments.",
+      "content": "As cities grapple with traffic congestion, air pollution, and limited space, micromobility solutions are emerging as a promising alternative to traditional modes of transportation. Electric scooters, bicycles, and other small-scale vehicles offer convenient, eco-friendly options for short-distance travel, reducing reliance on cars and promoting active transportation. Join us as we explore the benefits and challenges of micromobility solutions and discuss their potential to transform urban mobility and create more livable cities.",
+      "imgPath": "https://devdiscourse.blob.core.windows.net/devnews/21_04_2023_16_22_37_4310341.jpg",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-25T09:40:00.000Z"
+    },
+    {
+      "id": "e5a7",
+      "title": "The Art of Sustainable Fashion",
+      "permalink": "art-of-sustainable-fashion",
+      "category": {
+        "categoryId": "1cbc",
+        "category": "fashion"
+      },
+      "authorName": "Sophie Anderson",
+      "authorRole": "Sustainability Advocate",
+      "subtitle": "Exploring eco-friendly practices and innovations in the fashion industry.",
+      "content": "Sustainable fashion is more than just a trend; it's a movement towards creating clothing that is both stylish and environmentally responsible. From ethically sourced materials to zero-waste production methods, sustainable fashion brands are pioneering innovative approaches to reduce the industry's ecological footprint. Join us as we delve into the art of sustainable fashion, showcase inspiring brands and designers, and discuss how conscious consumer choices can drive positive change in the fashion industry.",
+      "imgPath": "https://currentmoodmag.com/delphinus/wp-content/uploads/Cover-image-1.jpg",
+      "views": 0,
+      "status": "new",
+      "isFeatured": true,
+      "createdAt": "2024-03-25T09:40:00.000Z"
+    }
+  ]
+}

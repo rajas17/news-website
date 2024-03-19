@@ -1,0 +1,97 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+<div class="container mx-auto px-4">
+    <div class="flex justify-center items-center mt-8">
+        <div class="w-full max-w-2xl">
+            <h1 class="mb-6 text-3xl font-semibold text-gray-900 dark:text-white text-center">{{formStatus}} <span
+                    class="text-blue-600">BLOG</span></h1>
+            <form [formGroup]="postForm" (ngSubmit)="onSubmit()"
+                class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                        Title</label>
+                    <input type="text" id="title" (keyup)="onTitleChange('title')" formControlName="title"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Your Title" required (blur)="markAsTouched('title')" />
+                    <div *ngIf="postForm.get('title')?.invalid && postForm.get('title')?.touched " class="text-danger">
+                        Enter a valid title</div>
+                </div>
+                <div class="mb-4">
+                    <label for="permalink" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                        Permalink</label>
+                    <input type="text" id="permalink" name="permalink" 
+                        formControlName="permalink" 
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Your Permalink" />
+
+                </div>
+                <div class="mb-4">
+                    <label for="subtitle" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                        Subtitle</label>
+                    <input type="text" id="subtitle" formControlName="subtitle"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Your Subtitle" (blur)="markAsTouched('subtitle')" />
+                    <div *ngIf="postForm.get('subtitle')?.invalid && postForm.get('subtitle')?.touched "
+                        class="text-danger">
+                        Enter a valid subtitle</div>
+                </div>
+                <div class="mb-4">
+                    <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                        your Category</label>
+                    <select id="category" formControlName="category" (blur)="markAsTouched('category')"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+
+                        <option value="" disabled>Please select a Category</option>
+                        <option value="{{category.categoryId}}-{{category.categoryName}}" *ngFor="let category of categories ">{{category.categoryName}}</option>
+
+                    </select>
+                    <div *ngIf="postForm.get('category')?.invalid && postForm.get('category')?.touched "
+                        class="text-danger">
+                        Enter a valid category</div>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                        message</label>
+                    <angular-editor formControlName="content" id="message" rows="15" (blur)="markAsTouched('content')"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Leave a comment..."></angular-editor>
+                    <div *ngIf="postForm.get('content')?.invalid && postForm.get('content')?.touched "
+                        class="text-danger">
+                        Minimum 50 characters</div>
+                </div>
+                <div class="mb-4">
+                    <label for="authorName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                        Author Name</label>
+                    <input type="text" id="authorName" formControlName="authorName"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder=" Author Name" (blur)="markAsTouched('authorName')" />
+                    <div *ngIf="postForm.get('authorName')?.invalid && postForm.get('authorName')?.touched "
+                        class="text-danger">
+                        Enter a valid subtitle</div>
+                </div>
+                <div class="mb-4">
+                    <label for="authorRole" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                        Author Name</label>
+                    <input type="text" id="authorRole" formControlName="authorRole"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder=" Author Role" (blur)="markAsTouched('authorRole')" />
+                    <div *ngIf="postForm.get('authorRole')?.invalid && postForm.get('authorRole')?.touched "
+                        class="text-danger">
+                        Enter a valid subtitle</div>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload
+                        image</label>
+                    <img  [src]="imgSrc" class=" mx-auto mv-3 img-fluid ">
+                    <input formControlName="img"
+                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-r-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        aria-describedby="user_avatar_help" id="user_avatar" type="file" (change)="showPreview($event)">
+                    <div class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">Upload an image for
+                        your blog</div>
+                </div>
+                <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

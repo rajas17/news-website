@@ -1,0 +1,95 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+<div class="container mx-auto mb-10 mt-10">
+    <div class="flex justify-center">
+        <div class="bg-white shadow-md rounded-lg p-6 w-full md:w-3/4 lg:w-2/3 xl:w-2/3">
+            <h3 class="text-center text-lg font-semibold mb-4">New Categories</h3>
+            <p class="text-center text-gray-600 mb-4">You can add new categories from here..!</p>
+            <form [formGroup]="categoryForm" (ngSubmit)="onSubmit(categoryForm)"
+                class="flex items-center justify-center flex-col"> <!-- Changed class -->
+                <div class="flex w-full mx-auto items-center justify-center flex-row">
+                    <input formControlName="category" type="text" name="category" 
+                        class="p-2 mb-2 shadow-md form-input border-gray-300 shadow-sm focus:outline-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-l-md w-3/4 md:w-full h-10"
+                        placeholder="Add New Category" required (blur)="markAsTouched('category')"
+                        [ngClass]="{'is-invalid': categoryForm.get('category')?.invalid && categoryForm.get('category')?.touched}">
+                    <button type="submit"
+                        class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 md:px-6 rounded-r-md ml-2 transition duration-300 ease-in-out transform hover:scale-105">Add
+                    </button>
+                </div>
+                <div *ngIf="categoryForm.get('category')?.invalid && categoryForm.get('category')?.touched "
+                    class="text-danger">Enter a valid category</div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-5 mx-auto max-w-md">
+        <div
+            class="border-gray-300 shadow-sm focus:outline-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-l-md relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Category
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let category of categoryArray"
+                        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4">
+                            {{category.categoryName}}
+                        </td>
+                        <td class="px-6 py-4">
+                            <button (click)="editCategoryDialog(category.categoryName, category.categoryId)"
+                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</button>
+                            <button (click)="deleteDialog(category.categoryId)"
+                                class=" ml-3 font-medium text-red-600 dark:text-red-500 hover:underline">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal for editing category -->
+<div *ngIf="showEditModal" class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="relative bg-white w-1/3 rounded shadow-lg">
+            <div class="p-6">
+                <h3 class="text-lg font-semibold mb-4">Edit Category</h3>
+                <input type="text" class="form-input w-full mb-4" [(ngModel)]="editedCategory">
+                <div class="flex justify-end">
+                    <button (click)="saveEditedCategory()"
+                        class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 md:px-6 rounded-md ml-2">Save</button>
+                    <button (click)="closeEditModal()"
+                        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 md:px-6 rounded-md ml-2">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete modal -->
+<div *ngIf="showDeleteModal" class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="relative bg-white w-1/3 rounded shadow-lg">
+            <div class="p-6">
+                <h3 class="text-lg font-semibold mb-4">Do you really want to <span class="text-red-600">DELETE</span></h3>
+                <div class="flex justify-end">
+                    <button (click)="deleteCategory()"
+                        class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 md:px-6 rounded-md ml-2">YES</button>
+                    <button (click)="closeDeleteModal()"
+                        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 md:px-6 rounded-md ml-2">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

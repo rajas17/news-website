@@ -1,0 +1,21 @@
+<div class="bg-white relative">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="custom-spinner">
+            <div *ngIf="isLoading; else content">
+                <div class="spinner-container min-h-screen mx-auto ">
+                    <div class="spinner-border " role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <ng-template #content >
+                <div class=" min-h-screen mx-auto mt-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-7 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div *ngFor="let post of postsArray">
+                    <app-cards [postData]="post"></app-cards>
+                </div>
+            </div>
+            </ng-template>
+        </div>
+    </div>
+

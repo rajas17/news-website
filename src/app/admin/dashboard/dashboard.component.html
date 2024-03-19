@@ -1,0 +1,198 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+<div class="bg-white container mx-auto">
+    <section id="minimal-statistics">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="col-span-full mt-3 mb-1">
+                <h4 class="text-3xl text">DASHBOARD</h4>
+                <p class="text-md">Welcome, {{activeUser}}!<p>
+            </div>
+            <a routerLink="/addcategory" class="col-span-1 sm:col-span-2 lg:col-span-1 ">
+                <div class="bg-blue-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-clipboard text-blue-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h3 class="text-2xl font-bold text-blue-700"></h3>
+                                <span class="text-gray-600 font-semibold text-lg">Add Category</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a routerLink="/review" class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <div class="bg-yellow-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-comment-alt text-yellow-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <span class="text-gray-600 font-semibold text-lg">Review Post</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a routerLink="/addpost" class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <div class="bg-green-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-add text-green-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <span class="text-gray-600 text-lg font-semibold">Add Post</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <div class="bg-red-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-eye text-red-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h3 class="text-2xl font-bold text-red-700"></h3>
+                                <span class="text-gray-600">Total Visits</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="minimal-statistics">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="col-span-full mt-3 mb-1">
+                <h4 class="text-3xl text">Statistics</h4>
+                <p class="text-md"></p>
+            </div>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <div class="bg-blue-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-pen text-blue-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h3 class="text-2xl font-bold text-blue-700">278</h3>
+                                <span class="text-gray-600">New Posts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <div class="bg-yellow-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-comment-alt text-yellow-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h3 class="text-2xl font-bold text-yellow-700">156</h3>
+                                <span class="text-gray-600">New Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <div class="bg-green-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-chart-line text-green-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h3 class="text-2xl font-bold text-green-700">64.89%</h3>
+                                <span class="text-gray-600">Bounce Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <div class="bg-red-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-eye text-red-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h3 class="text-2xl font-bold text-red-700">423</h3>
+                                <span class="text-gray-600">Total Visits</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats-subtitle">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="col-span-full mt-3 mb-1">
+                <h4 class="text-3xl">Additional Stats</h4>
+                <p></p>
+            </div>
+            <div class="col-span-1 sm:col-span-2">
+                <div class="bg-purple-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-file-alt text-purple-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h4 class="text-lg font-bold text-purple-700">Total Posts</h4>
+                                <span>Monthly blog posts</span>
+                            </div>
+                            <div class="ml-auto">
+                                <h1 class="text-2xl font-bold text-purple-700">18,000</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 sm:col-span-2">
+                <div class="bg-orange-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-comments text-orange-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h4 class="text-lg font-bold text-orange-700">Total Comments</h4>
+                                <span>Monthly blog comments</span>
+                            </div>
+                            <div class="ml-auto">
+                                <h1 class="text-2xl font-bold text-orange-700">84,695</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 sm:col-span-2">
+                <div class="bg-yellow-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-hand-holding-usd text-yellow-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h4 class="text-lg font-bold text-yellow-700">Total Sales</h4>
+                                <span>Monthly Sales Amount</span>
+                            </div>
+                            <div class="ml-auto">
+                                <h1 class="text-2xl font-bold text-yellow-700">$76,456.00</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 sm:col-span-2">
+                <div class="bg-green-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-wallet text-green-500 text-3xl mr-4"></i>
+                            <div class="text-right">
+                                <h4 class="text-lg font-bold text-green-700">Total Cost</h4>
+                                <span>Monthly Cost</span>
+                            </div>
+                            <div class="ml-auto">
+                                <h1 class="text-2xl font-bold text-green-700">$36,000.00</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
