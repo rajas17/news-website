@@ -12,11 +12,9 @@
             </div>
             <div class="col-md-4">
                 <h5 class="mb-4">Categories</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Technology</a></li>
-                    <li><a href="#" class="text-white">News</a></li>
-                    <li><a href="#" class="text-white">Food</a></li>
-                    <li><a href="#" class="text-white">Fashion</a></li>
+                <ul class="list-unstyled" *ngFor="let cat of categoryArray">
+                    <li><a [routerLink]="['/categories', cat.categoryId]" class="text-white">{{cat.categoryName | titlecase}}</a></li>
+                    
                 </ul>
             </div>
             <div class="col-md-4">

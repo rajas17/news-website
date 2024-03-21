@@ -30,9 +30,9 @@ export class SingleBlogCardComponent implements OnInit {
         this.postData = val
         console.log(this.postData);
 
-        this.postService.getByCategory(this.postData.category.categoryId).subscribe(val => {
+        this.postService.getByCategory(this.postData.categoryId).subscribe(val => {
           this.latestPosts = val as any[]
-          console.log(this.postData.category.categoryId);
+          console.log(this.postData.categoryId);
 
         })
       })

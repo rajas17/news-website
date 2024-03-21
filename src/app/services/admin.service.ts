@@ -19,7 +19,7 @@ export class AdminService {
   }
   
   addAdmin(data:any):Observable<any>{
-    return this._http.post(`${Environment.apiUrl}/admin`,data)
+    return this._http.post(`${Environment.apiUrl}/api/Admin/addAdmin`,data)
   }
 
   loggedInTrue(){

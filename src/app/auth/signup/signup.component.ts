@@ -36,7 +36,7 @@ export class SignupComponent implements OnInit {
       this._adminService.addAdmin(form.value).subscribe(val=>{
         this._snackbar.success('Admin added successfully')
         form.reset(),
-        this._router.navigateByUrl('/login')
+        this._router.navigateByUrl('/admin')
       })
       
     }else{

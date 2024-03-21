@@ -39,6 +39,8 @@ export class NavbarComponent implements OnInit {
     }, 4000);
   }
 
+  
+
   isMasterAdmin: boolean = false
   // desiredPage: boolean = true
   activeUserArray: any

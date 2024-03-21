@@ -36,11 +36,11 @@ export class PostsService {
     return this._http.delete(`${Environment.apiUrl}/api/Post/deletePost/${id}`)
   }
 
-  markFeatured(id:any,val:any):Observable<any>{
-    return this._http.put(`${Environment.apiUrl}/api/Post/posts/${id}`,val)
-  }
-
   getByCategory(categoryId:string):Observable<any>{
     return this._http.get(`${Environment.apiUrl}/api/Post/getByCategory/${categoryId}`)
+  }
+
+  getCount():Observable<any>{
+    return this._http.get(`${Environment.apiUrl}/api/Post/getCount`)
   }
 }

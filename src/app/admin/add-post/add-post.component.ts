@@ -198,7 +198,7 @@ export class AddPostComponent implements OnInit {
             ctx?.drawImage(img, 0, 0, width, height);
 
             // Get the Base64 string of the resized image
-            const compressedBase64 = canvas.toDataURL('image/jpeg', 0.7); // Adjust the quality as needed (0.7 represents 70% quality)
+            const compressedBase64 = canvas.toDataURL('image/jpeg', 0.9); // Adjust the quality as needed (0.7 represents 70% quality)
 
             // Store the Base64 string in imgSrc and selectedImg
             this.imgSrc = compressedBase64;
