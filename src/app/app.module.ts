@@ -27,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ProfileComponent } from './admin/profile/profile.component';
+import { SafeHTMLPipe } from './pipes/safe-html.pipe';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { ProfileComponent } from './admin/profile/profile.component';
     CategoryCardComponent,
     SignupComponent,
     ProfileComponent,
+    SafeHTMLPipe,
     
     
   ],

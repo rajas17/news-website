@@ -39,7 +39,7 @@ export class NavbarComponent implements OnInit {
     }, 4000);
   }
 
-  
+
 
   isMasterAdmin: boolean = false
   // desiredPage: boolean = true
@@ -48,22 +48,24 @@ export class NavbarComponent implements OnInit {
   displayMode: 'date' | 'time' = 'date';
   temp: any
   ngOnInit(): void {
-    
+
     this.updateDateTime();
     interval(1000).subscribe(() => {
       this.updateDateTime()
     })
-   
+
 
     this.activeUserArray = localStorage.getItem('user')
     this.temp = JSON.parse(this.activeUserArray)
     // console.log(this.temp.name);
     this.isLoggedIn = this._adminService.isLoggedIn
 
-    if (this.temp.role == true) {
-       this.isMasterAdmin = true 
+    if (this.isLoggedIn == true) {
+      if (this.temp.role == true) {
+        this.isMasterAdmin = true
       }
-       
+    }
+
     // this._router.events.pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd)).subscribe((event: NavigationEnd) => {
     //   if (event.url === '/admin') {
     //     this.desiredPage == true

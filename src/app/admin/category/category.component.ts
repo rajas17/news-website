@@ -86,7 +86,7 @@ export class CategoryComponent implements OnInit {
 
     this._categoryService.updateCategory(this.editedCategory, this.editedCategoryId).subscribe({
       next: (res) => {
-        alert('Edited successfully');
+        this._snackbar.success('Edited sucessfully!')
         this.refreshCategory()
       },
       error: (err) => {

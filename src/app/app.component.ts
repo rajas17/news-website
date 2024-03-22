@@ -27,10 +27,4 @@ ngOnInit(): void {
     this.currentRouteData = route.snapshot.data;
   });
 }
-// @HostListener('window:beforeunload', ['$event'])
-//   beforeUnloadHandler(event:Event) {
-//     if(this._adminService.loggedIn){
-//     // Clear authentication data from local storage when the page is refreshed or navigated away
-//     this._adminService.logout();}
-//   }
 }

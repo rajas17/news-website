@@ -54,7 +54,7 @@ export class AllPostsComponent implements OnInit {
   }
 
   refreshCategory() {
-    this._postsService.getPosts().subscribe({
+    this._postsService.getLatestPosts().subscribe({
       next: (res: any) => {
         console.log(res);
         this.postsArray = res

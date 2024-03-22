@@ -17,7 +17,8 @@
                                 {{post.title}}
                             </a>
                         </h1>
-                        <p class="mt-5 line-clamp-3 text-md leading-6 text-gray-600">{{post.content}}
+                        <p  [innerHTML]="post.content |safeHTML" class="mt-5 line-clamp-3 text-md leading-6 text-gray-600">
+                            
                             Lorem ipsum dolor sit amet
                             consectetur
                             adipisicing elit. Deserunt molestiae modi praesentium veniam minima rerum totam quaerat

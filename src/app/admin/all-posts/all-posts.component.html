@@ -57,7 +57,7 @@
                         {{post.categoryId}}-{{post.categoryName}}
                     </td>
                     <td class="px-6 py-4">
-                        {{post.content}}
+                        <div [innerHTML]="post.content | safeHTML"></div>
                     </td>
                     <td class="px-6 py-4">
                         {{post.createdAt | date}}

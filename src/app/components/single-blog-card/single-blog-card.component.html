@@ -16,7 +16,7 @@
                                 {{postData.title}}
                             </a>
                         </h1>
-                        <p class="mt-5 line-clamp-3 text-md leading-6 text-gray-600">{{postData.content}}</p>
+                        <p  [innerHTML]="postData.content |safeHTML" class="mt-5 line-clamp-3 text-md leading-6 text-gray-600"></p>
                         <!-- <p [innerHTML]="postData.content"></p> -->
                         
                     </div>

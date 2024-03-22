@@ -12,16 +12,16 @@ export class CategoryService {
   constructor(private _http: HttpClient,) { }
 
   addCategory(categoryName: string, status: string): Observable<any> {
-    return this._http.post(`${Environment.apiUrl}/api/Category/addCategory2`, { categoryName, status });
+    return this._http.post(`${Environment.apiUrl}/api/Category/addCategory`, { categoryName, status });
   }
 
   getCategory() {
     return this._http.get(`${Environment.apiUrl}/api/Category/getAllCategories`)
   }
 
-  updateCategory(data: string, id: number): Observable<any> {
-    const body = { category: data, status: 'live' };
-    return this._http.put(`${Environment.apiUrl}/api/Category/editCategory/${id}`, body);
+  updateCategory(categoryName: string, id: number): Observable<any> {
+    const status:string='live'
+    return this._http.put(`${Environment.apiUrl}/api/Category/editCategory/${id}`, {categoryName, status});
   }
 
   deleteCategory(id: number): Observable<any> {
