@@ -28,5 +28,8 @@ export class CategoryService {
     return this._http.delete(`${Environment.apiUrl}/api/Category/deleteCategory/${id}`)
   }
 
+  getCategoryById(categoryId:any):Observable<any>{
+    return this._http.get(`${Environment.apiUrl}/api/Category/getCategoryById/${categoryId}`)
+  }
 
 }

@@ -42,7 +42,7 @@
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
                         <option value="" disabled>Please select a Category</option>
-                        <option value="{{category.categoryId}}-{{category.categoryName}}" *ngFor="let category of categories ">{{category.categoryName}}</option>
+                        <option  value="{{category.categoryId}}-{{category.categoryName}}" *ngFor="let category of categories ">{{category.categoryName}}</option>
 
                     </select>
                     <div *ngIf="postForm.get('category')?.invalid && postForm.get('category')?.touched "
@@ -52,12 +52,12 @@
                 <div class="mb-4">
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                         message</label>
-                    <angular-editor formControlName="content" id="message" rows="15" (blur)="markAsTouched('content')"
+                    <angular-editor [(ngModel)]="inputText" (input)="calcRemaining()"  formControlName="content" id="message" rows="15" (blur)="markAsTouched('content')"
                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Leave a comment..."></angular-editor>
                     <div *ngIf="postForm.get('content')?.invalid && postForm.get('content')?.touched "
                         class="text-danger">
-                        Minimum 50 characters</div>
+                        Minimum 50 characters. Remaining characters {{remainingchars}}</div>
                 </div>
                 <div class="mb-4">
                     <label for="authorName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">

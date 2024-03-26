@@ -43,7 +43,7 @@ export class AddPostComponent implements OnInit {
       content: new FormControl('', [Validators.required, Validators.minLength(50)]),
       authorName: new FormControl('', [Validators.required, Validators.minLength(5)]),
       authorRole: new FormControl('', [Validators.required, Validators.minLength(5)]),
-      img: new FormControl('')
+      img: new FormControl('',Validators.required)
     })
   }
 
@@ -79,7 +79,7 @@ export class AddPostComponent implements OnInit {
         title: post.title,
         permalink: post.permalink,
         subtitle: post.subtitle,
-        category: `${post.categoryId}-${post.category}`,
+        category: `${post.categoryId}-${post.categoryName}`,
         content: post.content,
         authorName: post.authorName,
         authorRole: post.authorRole,
@@ -94,10 +94,7 @@ export class AddPostComponent implements OnInit {
   }
 
   onSubmit() {
-    const split = this.postForm.value.category.split('-')
-    
-    console.log(this.postForm.value.permalink);
-    
+    const split = this.postForm.value.category.split('-')    
 
     const postData: Post = {
       title: this.postForm.value.title,
@@ -217,4 +214,13 @@ export class AddPostComponent implements OnInit {
   markAsTouched(fieldName: string): void {
     this.postForm.get(fieldName)!.markAsTouched();
   }
+
+  inputText:string=''
+  minlength:number=50
+  remainingchars!:number
+
+  calcRemaining(){
+    this.remainingchars= this.minlength-this.inputText.length;
+  }
 }
+

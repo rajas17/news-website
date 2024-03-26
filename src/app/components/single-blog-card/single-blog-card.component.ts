@@ -19,11 +19,17 @@ export class SingleBlogCardComponent implements OnInit {
     private _renderer : Renderer2
   ) { }
   ngOnInit(): void {
+    const id = this._actRoute.snapshot.paramMap.get('id');
+    console.log(id)
+
+    this.postService.addView(id).subscribe(val=>{
+      console.log(val);  
+    });
     
-    console.log();
     this._actRoute.params.subscribe(val => {
       this.postId = val['id']
       console.log(val);
+      
       this._renderer.setProperty(window, 'scrollTo', { left: 0, top: 0, behavior: 'smooth' });
       
       this.postService.getSinglePost(this.postId).subscribe(val => {
@@ -36,7 +42,11 @@ export class SingleBlogCardComponent implements OnInit {
 
         })
       })
-    })
+
+      
+    });
+    
+   
    
 }
 

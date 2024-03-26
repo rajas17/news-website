@@ -25,6 +25,7 @@ export class PostsService {
 
   getSinglePost(id:any):Observable<any>{
     return this._http.get<any>(`${Environment.apiUrl}/api/Post/getSinglePost/${id}`)
+    
   }
  
 
@@ -42,5 +43,17 @@ export class PostsService {
 
   getCount():Observable<any>{
     return this._http.get(`${Environment.apiUrl}/api/Post/getCount`)
+  }
+
+  addView(id:any):Observable<any>{
+    return this._http.put(`${Environment.apiUrl}/api/Post/addView/`+id,{});
+  }
+
+  gettotalViews(){
+    return this._http.get(`${Environment.apiUrl}/api/Post/getAllViews`)
+  }
+
+  getViewsbyCategory():Observable<any>{
+    return this._http.get(`${Environment.apiUrl}/api/Post/getCategoryViews`)
   }
 }

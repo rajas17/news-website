@@ -6,8 +6,11 @@
             <div class="col-lg-8 ">
                 <a [routerLink]="['/singleblog', post.id]" *ngFor="let post of postData | slice:0:1"
                     class="flex max-w-xl mx-auto flex-col items-start justify-between">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">{{post.createdAt | date}}</time>
+                    <div class="flex justify-between items-center w-full text-xs text-gray-500">
+                        <time datetime="2020-03-16" class="ml-2 text-gray-500">{{post.createdAt | date}}</time>
+                        <div class="flex mr-2 items-center text-gray-500">
+                            <i class="far fa-eye mr-1"></i>{{ post.views }}
+                          </div>
                     </div>
                     <div class="group relative">
                         <img class="w-full mt-2 h-80 object-center rounded-xl object-cover" [src]="post.imgPath" alt="">
