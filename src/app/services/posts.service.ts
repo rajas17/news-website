@@ -56,4 +56,8 @@ export class PostsService {
   getViewsbyCategory():Observable<any>{
     return this._http.get(`${Environment.apiUrl}/api/Post/getCategoryViews`)
   }
+
+  getPostsbyViews():Observable<any>{
+    return this._http.get(`${Environment.apiUrl}/api/Post/getPostsByViews`)
+  }
 }

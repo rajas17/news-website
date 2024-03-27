@@ -55,9 +55,9 @@
                     </td>
                     <td class="px-6 py-4">
                         {{post.categoryId}}-{{post.categoryName}}
-                    </td>
+                    </td> 
                     <td class="px-6 py-4">
-                        <div [innerHTML]="post.content | safeHTML"></div>
+                        <div  [innerHTML]="post.content |sliceSafeHtml:0:150">...</div>
                     </td>
                     <td class="px-6 py-4">
                         {{post.createdAt | date}}

@@ -15,7 +15,7 @@ export class SinglePageComponent implements OnInit {
   isLoading: boolean = false
   ngOnInit(): void {
     this.isLoading = true
-    this._postService.getLatestPosts().pipe(finalize(() => this.isLoading = false)).subscribe(val => {
+    this._postService.getPostsbyViews().pipe(finalize(() => this.isLoading = false)).subscribe(val => {
       this.postsArray = val
     })
   }

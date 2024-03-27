@@ -2,9 +2,18 @@
 
 
 <a [routerLink]="['/singleblog' ,postData.id ]" class="flex max-w-xl flex-col items-start justify-between">
-    <div class="flex items-center gap-x-4 text-xs">
-        <time datetime="2020-03-16" class="text-gray-500">{{ postData.createdAt | date }}</time>
-        <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ postData.categoryName }}</a>
+    
+    <div class="flex justify-between items-center w-full text-xs text-gray-500">
+        <div class="gap-x-10">
+            <time datetime="2020-03-16" class="ml-2 text-gray-500">{{postData.createdAt | date}}</time>
+            <a href="#"
+                class="relative z-10 rounded-full bg-gray-70 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{
+                postData.categoryName }}</a>
+
+        </div>
+        <div class="flex mr-2 items-center text-gray-500">
+            <i class="far fa-eye mr-1"></i>{{ postData.views }}
+        </div>
     </div>
     <div class="group relative">
         <img class="w-full mt-2 h-60 object-cover rounded-xl oject-center" [src]="postData.imgPath" alt="">
@@ -71,7 +80,7 @@
                     </div>
                 </div>
             </article> -->
-            <!-- <article class="flex max-w-xl flex-col items-start justify-between">
+<!-- <article class="flex max-w-xl flex-col items-start justify-between">
                 <div class="flex items-center gap-x-4 text-xs">
                     <time datetime="2020-03-16" class="text-gray-500">Feb 22, 2024</time>
                     <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Artificial Intelligence</a>
@@ -129,7 +138,7 @@
                     </div>
                 </div>
             </article> -->
-        <!-- </div>
+<!-- </div>
     </div>
 </div> -->
 

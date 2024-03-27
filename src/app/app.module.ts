@@ -28,6 +28,7 @@ import { CategoryCardComponent } from './components/category-card/category-card.
 import { SignupComponent } from './auth/signup/signup.component';
 import { ProfileComponent } from './admin/profile/profile.component';
 import { SafeHTMLPipe } from './pipes/safe-html.pipe';
+import { SliceSafeHtmlPipe } from './pipes/slice-safe-html.pipe';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { SafeHTMLPipe } from './pipes/safe-html.pipe';
     SignupComponent,
     ProfileComponent,
     SafeHTMLPipe,
+    SliceSafeHtmlPipe,
     
     
   ],

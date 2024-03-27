@@ -68,7 +68,6 @@ export class LoginComponent {
         const token = user.token
         this._adminService.setToken(user)
         this._adminService.loggedInTrue()
-        console.log(this._adminService.isLoggedIn);
       }
       else {
         this._snackbar.error('User not found!')
@@ -91,7 +90,6 @@ export class LoginComponent {
           this._snackbar.success('Login Successful!')
           localStorage.setItem('user', token)
           this._adminService.loggedInTrue()
-          this._adminService.isLoggedIn
           this._router.navigate(['/admin',
              { name: res.name }
           ])
