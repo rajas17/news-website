@@ -53,7 +53,7 @@ const routes: Routes = [
   {
     path: 'admin',
     component: DashboardComponent,
-    // canActivate: [authGuard],
+    canActivate: [authGuard],
   },
   {
     path: 'navbar',
