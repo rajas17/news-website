@@ -61,7 +61,7 @@ export class SnackBarService {
 
     setTimeout(() => {
       document.body.removeChild(alertDiv);
-    }, 5000);
+    }, 3000);
     
 }
 
